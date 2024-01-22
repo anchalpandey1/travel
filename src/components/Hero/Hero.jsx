@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero relative overflow-y-hidden h-80"> {/* Adjust the height as needed */}
+    <div className="hero relative overflow-y-hidden md:h-[35em]">
       <video
         ref={videoRef}
         autoPlay
@@ -28,19 +28,19 @@ const Hero = () => {
       >
         <source src={b} type="video/mp4" />
       </video>
-      <div className="play-pause-overlay absolute inset-0 flex items-center justify-center">
+      <div className="absolute bottom-4 left-4">
         <button
-          className="play-pause-button focus:outline-none"
+          className="play-pause-button focus:outline-none text-red-500"
           onClick={togglePlayPause}
         >
           {isPlaying ? (
-            <PauseIcon className="w-10 h-10" />
+            <PauseIcon className="w-6 h-6" />
           ) : (
-            <PlayIcon className="w-10 h-10" />
+            <PlayIcon className="w-6 h-6" />
           )}
         </button>
       </div>
-      </div>
+    </div>
   );
 };
 

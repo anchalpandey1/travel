@@ -7,6 +7,10 @@ export default {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      boxShadow: ['hover'],
+    },
+  },
   plugins: [],
 }
-
