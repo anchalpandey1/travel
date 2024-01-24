@@ -91,7 +91,6 @@ const Plan = () => {
                   <p className="text-center text-white">Rs. 999</p>
                 </div></div>
             </div>
-
           </div>
         </div>
       </div>
